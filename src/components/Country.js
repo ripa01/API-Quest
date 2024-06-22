@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const Country = () => {
   const [countryName, setCountryName] = useState("");
@@ -22,6 +23,8 @@ const Country = () => {
   };
 
   return (
+    <div>
+      <Navbar />
     <div className="bg-white py-10 px-10 sm:py-10 sm:px-10">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl mb-5 font-bold text-center tracking-tight text-blue-900 sm:text-4xl">
@@ -71,8 +74,8 @@ const Country = () => {
             title="Currency"
             content={
               <>
-                <p>Currency Name: {countryData.currencies.BDT.name}</p>
-                <p>Symbol: {countryData.currencies.BDT.symbol}</p>
+                <p>{Object.keys(countryData.currencies)}</p>
+                {/* <p>Symbol: {countryData.currencies.BDT.symbol}</p> */}
               </>
             }
           />
@@ -119,11 +122,12 @@ const Country = () => {
         </div>
       )}
     </div>
+    </div>
   );
 };
 
 const CountryCard = ({ title, content }) => (
-  <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+  <div className="block max-w-sm p-6 bg-blue-100 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
     <div className="font-normal text-gray-700 dark:text-gray-400">{content}</div>
   </div>
