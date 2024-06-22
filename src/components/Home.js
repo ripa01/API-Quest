@@ -4,7 +4,8 @@ import Navbar from './Navbar';
 // import Footer from './Footer';
 
 import weatherImage from '../images/weather.svg'; // Import the image
-import countryImage from '../images/country.svg';
+import countryImage from '../images/global.svg';
+import languageImage from '../images/language.svg';
 
 export default function Home() {
   return (
@@ -16,14 +17,20 @@ export default function Home() {
           <HomeCard
             img={weatherImage}
             title="Latitude & Longitude Weather Dashboard"
-            subtitle="Get real-time weather information by entering coordinates"
+            subtitle="Get real-time weather information by entering coordinates!"
             link="/LanLonBoard"
           />
           <HomeCard
             img={countryImage}
             title="Country Information Dashboard"
-            subtitle="Explore detailed information about any country"
+            subtitle="Explore detailed information about any country!"
             link="/Country"
+          />
+          <HomeCard
+            img={languageImage}
+            title="Discover Languages of the World"
+            subtitle="Explore Comprehensive Details of Countries by Their Spoken Languages!"
+            link="/Language"
           />
         </div>
       </div>
