@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 
 const LanLonBoard = () => {
   const [lat, setLat] = useState("");
@@ -23,6 +24,7 @@ const LanLonBoard = () => {
   };
 
   return (
+    <div>  <Navbar /> 
     <div className="bg-white py-10 px-10 sm:py-10 sm:px-10">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl mb-5 font-bold text-center tracking-tight text-blue-900 sm:text-4xl">
@@ -61,7 +63,7 @@ const LanLonBoard = () => {
         </div>
       </div>
 
-      <div className="mx-auto justify-center grid max-w-7xl mt-5 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-1">
+      <div className="mx-auto justify-center grid max-w-sm mt-5 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-1">
         <button
           onClick={handleFetchWeather}
           type="button"
@@ -123,6 +125,7 @@ const LanLonBoard = () => {
           />
         </div>
       )}
+    </div>
     </div>
   );
 };
