@@ -28,14 +28,13 @@ const Country = () => {
     <div className="bg-white py-10 px-10 sm:py-10 sm:px-10">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl mb-5 font-bold text-center tracking-tight text-blue-900 sm:text-4xl">
-          Search Your Country
+         Explore detailed information about any country!
         </h2>
       </div>
 
       <div className="mx-auto grid max-w-7xl  gap-y-20 px-6 lg:px-8 xl:grid-cols-1">
         <div className="max-w-sm mx-auto">
           <label htmlFor="country-input" className="block mb-2 text-sm font-medium text-gray-900">
-            Enter Country Name:
           </label>
           <input
             onChange={(e) => setCountryName(e.target.value)}

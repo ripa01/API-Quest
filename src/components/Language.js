@@ -64,7 +64,7 @@ const Language = () => {
         </div>
 
         {languageData.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 mb-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-10 mb-10 mt-10">
             {languageData.map((country, index) => (
               <React.Fragment key={index}>
                 <LanguageCard
