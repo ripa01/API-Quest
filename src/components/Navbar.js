@@ -4,7 +4,7 @@ import logo from "../images/logo2.svg";
 
 const Navbar = () => {
   return (
-    <nav className= "sticky top-0 bg-blue-100 p-4 flex items-center justify-center">
+    <nav className= "sticky top-0 bg-blue-400 p-4 flex items-center justify-center">
       {/* Left side of the navbar */}
       <div className="items-center">
         <Link to="/" className="flex items-center text-black mr-4">
