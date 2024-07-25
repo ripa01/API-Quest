@@ -22,7 +22,7 @@ API Quest is a React web application that connects to an external API to retriev
   
 ### Latitude & Longitude Weather Dashboard
 
-- Get real-time weather information by entering geographic coordinates (latitude and longitude).
+- Get real-time weather information by entering geographic coordinates(latitude and longitude).
 - Display details such as temperature, wind speed, weather conditions, sunrise and sunset times and other relevant weather information.
 
   
